@@ -7,15 +7,18 @@ eureka:
 server:
     port: 8787
 spring:
-    application:
-        name: ship-service
-    profiles:
-      active: dev
-    cloud:
-      config:
-        uri: http://localhost:8888
+  cloud:
+    bus:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+        name: shiping-service
+  config:
+    import: "optional:configserver:http://localhost:8888"
 
 test:
-    url: https://demo.org
-    username: Nam XXXX
-    password: 123456$
+  username: minhtx
