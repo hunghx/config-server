@@ -17,5 +17,5 @@ spring:
 
 test:
     url: https://demo.org
-    username: hunghx
+    username: Nam XXXX
     password: 123456$
