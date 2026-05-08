@@ -21,4 +21,4 @@ spring:
     import: "optional:configserver:http://localhost:8888"
 
 test:
-  username: minhtx
+  username: minhtxhcdsyucvysdvcysd
